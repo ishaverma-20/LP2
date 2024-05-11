@@ -1,0 +1,7 @@
+//Assignment 11(ii)
+public class TemperatureConverter {
+    public static void convert(Integer celsius) {
+        Decimal fahrenheit = (Decimal)celsius * 9 / 5 + 32;
+        System.debug(celsius + '"C in Fahrenheit is: '+ fahrenheit);
+    }
+}

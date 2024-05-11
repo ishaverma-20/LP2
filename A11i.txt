@@ -1,0 +1,8 @@
+//Assignment 11(i)
+public class ElectricityBillCalculator {
+    public static void calculateBill(Integer unitsConsumed) {
+        Decimal ratePerUnit = 5.0; // Example rate per unit
+        Decimal totalBill = unitsConsumed * ratePerUnit;
+        System.debug('The Bill for ' + unitsConsumed + 'units is: '+ totalBill);
+    }
+}

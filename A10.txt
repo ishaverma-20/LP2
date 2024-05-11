@@ -1,0 +1,17 @@
+//Assignment 10
+public class Greatest {
+	public static void compare(Integer num1, Integer num2, Integer num3)
+    {
+        if((num1 == num2) && (num2 == num3))
+            System.debug('The numbers are equal');
+        else
+        {
+            Integer greatest = num1;
+            if(num2>greatest)
+                greatest = num2;
+            if(num3>greatest)
+                greatest = num3;
+            System.debug('The greatest number is: '+ greatest);
+        }
+    }
+}

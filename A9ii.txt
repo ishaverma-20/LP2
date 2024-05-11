@@ -1,0 +1,22 @@
+//Assignment 9(ii)
+public class Marksheet {
+    public static Integer add(Integer m1, Integer m2, Integer m3) {
+        Integer result = m1 + m2 + m3;
+        return (result);
+    }
+    
+    public static Decimal avg(Integer total) {
+        Decimal result = total/3;
+        return (result);
+    }
+    
+    public static void displayMarks(Integer m1, Integer m2, Integer m3) {
+        System.debug('Student Marks1: ' + m1);
+        System.debug('Student Marks2: ' + m2);
+        System.debug('Student Marks3: ' + m3);
+        Integer total = add(m1, m2, m3);
+        System.debug('Student Total: ' + total);
+        Decimal average = avg(total);
+        System.debug('Student Average: ' + average);
+    }
+}

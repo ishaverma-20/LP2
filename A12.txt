@@ -1,0 +1,23 @@
+public class A12{
+    private static Map<String, Decimal> rates = new Map<String, Decimal>{
+      'USD-INR' => 75.0,
+      'INR-USD' => 0.013
+    };
+	
+	public static void main(String fromCurrency, String toCurrency, Decimal Amt)
+    {
+        Decimal result;
+        String key = fromCurrency + '-' + toCurrency;
+        
+        if(rates.containsKey(key))
+        {
+            Decimal rate = rates.get(key);
+            result = Amt * rate;
+            System.debug(fromCurrency+' '+Amt+' to '+toCurrency+result);
+        }
+        else
+        {
+            System.debug('Conversion not found');
+        }
+    }
+}
